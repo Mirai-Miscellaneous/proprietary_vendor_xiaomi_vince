@@ -313,7 +313,6 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     consumerir.default \
-    com.fingerprints.extension@1.0\
     gf_fingerprint.default \
     fingerprint.default \
     libgf_algo \
