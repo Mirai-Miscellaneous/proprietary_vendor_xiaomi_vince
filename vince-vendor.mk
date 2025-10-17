@@ -197,6 +197,7 @@ PRODUCT_PACKAGES += \
     libjpegdhw \
     libjpegdmahw \
     libjpegehw \
+    libllvd_smore \
     libmmcamera2_c2d_module \
     libmmcamera2_cpp_module \
     libmmcamera2_dcrf \
@@ -284,6 +285,7 @@ PRODUCT_PACKAGES += \
     libmmcamera_vince_ov5675_qtech \
     libmmcamera_vince_ov5675_qtech_eeprom \
     libmmjpeg \
+    libmpbase \
     libmmqjpeg_codec \
     libmmqjpegdma \
     libois_lc898122 \
@@ -313,14 +315,13 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     consumerir.default \
-    com.fingerprints.extension@1.0\
-    gf_fingerprint.default \
-    fingerprint.default \
+    gf_fingerprint.goodix.default \
+    fingerprint.fpc.default \
     libgf_algo \
     libgf_ca \
     libgf_hal \
-    libvendor.goodix.hardware.fingerprint@1.0-service \
-    libvendor.goodix.hardware.fingerprint@1.0
+    libvendor.goodix.hardware.fingerprint@1.0-service
+
 PRODUCT_COPY_FILES += \
     vendor/xiaomi/vince/proprietary/vendor/etc/diracmobile.config:$(TARGET_COPY_OUT_VENDOR)/etc/diracmobile.config \
     vendor/xiaomi/vince/proprietary/vendor/etc/perf/commonresourceconfigs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/commonresourceconfigs.xml \
