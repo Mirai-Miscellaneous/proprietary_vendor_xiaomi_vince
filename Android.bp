@@ -4982,11 +4982,20 @@ cc_prebuilt_library_shared {
     },
     target: {
         android_arm64: {
-            srcs: ["proprietary/vendor/lib64/libgf_algo.so"],
+            srcs: [
+                "proprietary/vendor/lib64/libgf_algo.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "liblog",
+                "libstdc++_vendor",
+                "libm",
+                "libc",
+                "libdl",
+            ],
         },
     },
     compile_multilib: "64",
-    check_elf_files: false,
     prefer: true,
     soc_specific: true,
 }
@@ -4999,11 +5008,21 @@ cc_prebuilt_library_shared {
     },
     target: {
         android_arm64: {
-            srcs: ["proprietary/vendor/lib64/libgf_ca.so"],
+            srcs: [
+                "proprietary/vendor/lib64/libgf_ca.so",
+            ],
+            shared_libs: [
+                "libQSEEComAPI",
+                "libhardware",
+                "libc",
+                "libm",
+                "libstdc++_vendor",
+                "libdl",
+                "liblog",
+            ],
         },
     },
     compile_multilib: "64",
-    check_elf_files: false,
     prefer: true,
     soc_specific: true,
 }
@@ -5016,14 +5035,28 @@ cc_prebuilt_library_shared {
     },
     target: {
         android_arm64: {
-            srcs: ["proprietary/vendor/lib64/libgf_hal.so"],
+            srcs: [
+                "proprietary/vendor/lib64/libgf_hal.so",
+            ],
+            shared_libs: [
+                "libgf_algo",
+                "libcutils",
+                "libbinder",
+                "libutils",
+                "libgf_ca",
+                "liblog",
+                "libc",
+                "libm",
+                "libstdc++_vendor",
+                "libdl",
+            ],
         },
     },
     compile_multilib: "64",
-    check_elf_files: false,
     prefer: true,
     soc_specific: true,
 }
+
 
 cc_prebuilt_library_shared {
     name: "gf_fingerprint.goodix.default",
@@ -5033,11 +5066,27 @@ cc_prebuilt_library_shared {
     },
     target: {
         android_arm64: {
-            srcs: ["proprietary/vendor/lib64/hw/gf_fingerprint.goodix.default.so"],
+            srcs: [
+                "proprietary/vendor/lib64/hw/gf_fingerprint.goodix.default.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libc",
+                "libc++",
+                "libbase",
+                "libdl",
+                "libhardware",
+                "libcrypto",
+                "libgf_hal",
+                "libgf_ca",
+                "vendor.goodix.hardware.fingerprint@1.0",
+                "libvendor.goodix.hardware.fingerprint@1.0-service",
+                "libm",
+                "liblog",
+            ],
         },
     },
     compile_multilib: "64",
-    check_elf_files: false,
     relative_install_path: "hw",
     prefer: true,
     soc_specific: true,
@@ -5051,11 +5100,33 @@ cc_prebuilt_library_shared {
     },
     target: {
         android_arm64: {
-            srcs: ["proprietary/vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0-service.so"],
+            srcs: [
+                "proprietary/vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0-service.so",
+            ],
+            shared_libs: [
+                "libutils",
+                "libcutils",
+                "liblzma",
+                "libc",
+                "libc++",
+                "libbase",
+                "libdl",
+                "libhardware",
+                "libcrypto",
+                "liblog",
+                "libhidlbase",
+                "libhidltransport",
+                "libhwbinder",
+                "android.hardware.keymaster@3.0",
+                "vendor.goodix.hardware.fingerprint@1.0",
+                "libgf_hal",
+                "libgf_ca",
+                "libQSEEComAPI",
+                "libm",
+            ],
         },
     },
     compile_multilib: "64",
-    check_elf_files: false,
     prefer: true,
     soc_specific: true,
 }
