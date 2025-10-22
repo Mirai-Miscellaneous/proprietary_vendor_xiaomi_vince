@@ -197,7 +197,6 @@ PRODUCT_PACKAGES += \
     libjpegdhw \
     libjpegdmahw \
     libjpegehw \
-    libllvd_smore \
     libmmcamera2_c2d_module \
     libmmcamera2_cpp_module \
     libmmcamera2_dcrf \
@@ -285,7 +284,6 @@ PRODUCT_PACKAGES += \
     libmmcamera_vince_ov5675_qtech \
     libmmcamera_vince_ov5675_qtech_eeprom \
     libmmjpeg \
-    libmpbase \
     libmmqjpeg_codec \
     libmmqjpegdma \
     libois_lc898122 \
