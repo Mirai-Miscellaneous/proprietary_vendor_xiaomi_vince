@@ -4,7 +4,7 @@
 
 soong_namespace {
 	imports: [
-		"vendor/xiaomi/mithorium-common",
+		"vendor/xiaomi/mithorium-common-4.19",
 		"hardware/xiaomi",
 	],
 }
